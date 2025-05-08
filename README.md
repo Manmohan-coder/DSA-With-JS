@@ -11,3 +11,4 @@ The primary goal of this project is to strengthen my **problem-solving** skills 
 ---
 
 ## 🧭 Roadmap: Zero to Hero in DSA
+### 📌 Phase 1: Foundations of JavaScript
