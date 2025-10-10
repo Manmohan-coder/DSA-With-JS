@@ -1,5 +1,6 @@
 // Print a Triangular Number Pattern
-// Write a function printPattern(n) that prints a triangle of numbers with n rows. The pattern follows these rules:
+// Write a function printPattern(n) that prints a triangle of numbers with n rows. 
+// Zoho Interview Question of pattern programming.
 
 const prompt = require('prompt-sync')();
 let n = Number(prompt('Enter the number of rows: '));
