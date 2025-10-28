@@ -19,6 +19,7 @@
 // Example 2:
 // Input: nums = [2,3,4,0,4,1,0]
 // Output: 0
+
 // brute force approch
 const check = function (nums, i, dir, count) {
     let temp = [...nums]
