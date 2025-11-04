@@ -54,3 +54,21 @@ const getSneakyNumbers = function (nums) {
 console.log(getSneakyNumbers([0, 1, 1, 0]));
 console.log(getSneakyNumbers([0, 3, 2, 1, 3, 2]));
 console.log(getSneakyNumbers([7, 1, 5, 4, 3, 4, 6, 0, 9, 5, 8, 2]));
+
+var minCost1 = function(colors, neededTime) {
+    let totalTime = 0;
+    let maxTime = neededTime[0]; // highest time in current group
+
+    for (let i = 1; i < colors.length; i++) {
+        if (colors[i] === colors[i - 1]) {
+            // same color group → keep the one with highest cost
+            totalTime += Math.min(maxTime, neededTime[i]);
+            maxTime = Math.max(maxTime, neededTime[i]);
+        } else {
+            // new color → reset maxTime
+            maxTime = neededTime[i];
+        }
+    }
+
+    return totalTime;
+};
